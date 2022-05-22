@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Login Page</title>
+  <title>Sign Up</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   <link rel="stylesheet" href="/CSS/userapp.css">
@@ -23,10 +23,15 @@
 	
 	
 		<div class="right">
-		<h5>Login</h5>
-		<p>Don't have an account? <a href="/regiester.html">Creat Your Account</a> it takes less than a minute</p>
-		<div class="inputs">
-			<input type="text" placeholder="user name">
+		<h5>Sign Up</h5>
+		<p>Already have an account? <a href="/index.html">  Login Your Account</a> it takes less than a minute</p>
+		
+        <div class="inputs">
+			<input type="text" placeholder="Name">
+			<br>
+			<input type="email" placeholder="Email">
+            <br>
+            <input type="number" placeholder="Phone">
 			<br>
 			<input type="password" placeholder="password">
 		</div>
@@ -34,15 +39,11 @@
 			<br><br>
 			
 		<div class="remember-me--forget-password">
-	<label>
-		<input type="checkbox" name="item" checked/>
-		<span class="text-checkbox">Remember me</span>
-	</label>
-			<p>forget password?</p>
+	
 		</div>
 			
 			<br>
-			<button type="button" onclick="login()">Login</button>
+			<button type="button" onclick="login()">Submit</button>
 	</div>
 	
 </div>
@@ -51,7 +52,6 @@
 </html>
 <script>
 	const login=()=>{
-		console.log("äsd")
-     window.location.replace("./dashboard.html");
+     window.location.replace("./index.html");
      }
 </script>
